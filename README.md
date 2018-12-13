@@ -14,3 +14,5 @@ Si no querés hacer nada complicado, podes usar algo simple y gratis,
 como [Heroku](https://www.heroku.com/).
 
 Heroku tiene la ventaja de darte HTTPS asi que sabés que tu bot va a funcionar si o si.
+
+Si querés ayuda con algún tema en específico, por favor, revisa la carpeta docs:
