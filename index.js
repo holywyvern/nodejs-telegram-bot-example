@@ -11,6 +11,13 @@ const BOT_TOKEN = "";
 // (es decir, que sea HTTPS y no solamente HTTP)
 // ------------------------------------------------------------------------------
 const BASE_URL = "";
+// ------------------------------------------------------------------------------
+// Usamos una url basica para los juegos
+// Por defecto, al ser <base>/telegram/games, significa que todo juego que se
+// coloque en la carpeta /telegram/games/<codigo-del-juego>/index.html
+// va a ser leido por Telegram por defecto.
+// ------------------------------------------------------------------------------
+const GAMES_URL = `${BASE_URL}/telegram/games`;
 // ==============================================================================
 // FIN De las configuraciones mínimas
 // ------------------------------------------------------------------------------
@@ -125,9 +132,6 @@ const WEBHOOK_PATH = `/telegram/bot/hooks/${securerandom.hex(16)}`;
 // Generamos una URL al azar para el webhook
 // Sin embargo de momento no se usa.
 const WEBHOOK_URL = `${BASE_URL}${WEBHOOK_PATH}`;
-
-// Usamos una url basica para los juegos
-const GAMES_URL = `${BASE_URL}/telegram/games`;
 
 // Necesitamos esto para leer request de telegram
 app.use(cookieParser());
