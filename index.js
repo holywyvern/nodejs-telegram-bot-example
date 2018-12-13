@@ -16,6 +16,7 @@ const BASE_URL = "";
 // Por defecto, al ser <base>/telegram/games, significa que todo juego que se
 // coloque en la carpeta /telegram/games/<codigo-del-juego>/index.html
 // va a ser leido por Telegram por defecto.
+// Se puede cambiar, pero recomiendo dejarlo tal cual.
 // ------------------------------------------------------------------------------
 const GAMES_URL = `${BASE_URL}/telegram/games`;
 // ==============================================================================
