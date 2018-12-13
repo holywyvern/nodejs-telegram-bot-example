@@ -201,7 +201,7 @@ app.post(WEBHOOK_PATH, (request, response) => {
 
 // Actualizamos el webhook de telegram cada vez que reiniciamos
 if (telegram) {
-  telegram.setWebHook(WEBHOOK_PATH);
+  telegram.setWebHook(WEBHOOK_URL);
 }
 
 // Iniciamos el servidor en el puerto para el Proxy
