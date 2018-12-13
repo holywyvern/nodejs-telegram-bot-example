@@ -16,9 +16,15 @@ const BASE_URL = "";
 // Por defecto, al ser <base>/telegram/games, significa que todo juego que se
 // coloque en la carpeta /telegram/games/<codigo-del-juego>/index.html
 // va a ser leido por Telegram por defecto.
-// Se puede cambiar, pero recomiendo dejarlo tal cual.
+// Se puede cambiar, pero recomiendo dejarlo tal cual.git
 // ------------------------------------------------------------------------------
 const GAMES_URL = `${BASE_URL}/telegram/games`;
+// ------------------------------------------------------------------------------
+// Puerto usado por el servidor,
+// Podes pasar un puerto como parámetro, o usar 8081.
+// Heroku generalmente te obliga a usar un puerto en específico.
+// ------------------------------------------------------------------------------
+const PORT = process.env.PORT || 8081;
 // ==============================================================================
 // FIN De las configuraciones mínimas
 // ------------------------------------------------------------------------------
@@ -199,7 +205,7 @@ if (telegram) {
 }
 
 // Iniciamos el servidor en el puerto para el Proxy
-app.listen(8081);
+app.listen(PORT);
 
 // ==============================================================================
 // Aca termina el código del BOT
